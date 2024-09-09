@@ -38,7 +38,7 @@ dependencies:
 flutter:
   generate: true
 
-7. เรียก debug
+7. เรียก debug 
 
 8. ไฟล์ main.dart ทำตามนี้
 เพิ่ม
