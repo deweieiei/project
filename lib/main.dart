@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:project/modelsProvider/counter.dart';
+import 'package:project/view/index.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -25,15 +26,15 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
       create: (context) {
         Counter();
       },
-      child: MaterialApp(
-        localizationsDelegates: const [
+      child:const MaterialApp(
+        localizationsDelegates: [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.supportedLocales,
-        home: Container(),
+        home: IndexApp(),
       ),
     );
   }
