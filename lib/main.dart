@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:project/modelsProvider/counter.dart';
-import 'package:project/view/index.dart';
+import 'package:project/view/web/index.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -34,7 +34,7 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.supportedLocales,
-        home: IndexApp(),
+        home: IndexWeb(),//เเก้ที่บิ้ว
       ),
     );
   }
