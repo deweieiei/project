@@ -11,7 +11,9 @@ class IndexWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title:const NavbarApp(),),
-      body: Container(),
+      body: ListView.builder(
+        itemBuilder:(context,i)=> Text(i.toString()),
+      ),
     );
   }
 }

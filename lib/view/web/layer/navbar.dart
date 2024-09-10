@@ -5,6 +5,9 @@ class NavbarApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(width: MediaQuery.of(context).size.width
+    ,height: 50,
+    decoration:const BoxDecoration(color: Colors.black),
+    );
   }
 }
