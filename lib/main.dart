@@ -19,22 +19,21 @@ class MainApp extends StatefulWidget {
 }
 
 class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
-
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) {
         Counter();
       },
-      child:  MaterialApp(
-        localizationsDelegates:const [
+      child: MaterialApp(
+        localizationsDelegates: const [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.supportedLocales,
-        home: IndexWeb(),//เเก้ที่บิ้ว
+        home: IndexWeb(), //เเก้ที่บิ้ว
       ),
     );
   }

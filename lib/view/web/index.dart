@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project/view/web/layer/navbar.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 // ignore: must_be_immutable
@@ -10,38 +9,32 @@ class IndexWeb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const NavbarApp(),
-      ),
-      body: SizedBox(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          child: Stack(
-            alignment: AlignmentDirectional.center,
-            children: [
-            //  Image.asset(""),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(4),
-                    color: const Color.fromARGB(200, 255, 255, 255),
-                    border: Border.all(color: Colors.white)),
-                width: 100,
-                height: 180,
-                child: Column(
-                  children: [
-                    Row(children: [
-                      Text(S.of(context)!.user),
-                      TextField(controller: user)
-                    ]),
-                    Row(children: [
-                      Text(S.of(context)!.password),
-                      TextField(controller: password)
-                    ])
-                  ],
+        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+        // appBar: AppBar(
+        //   title: const NavbarApp(),
+        // ),
+        body: Center(
+          child: Container(
+            height: 380,
+            width: 480,
+            decoration: BoxDecoration(
+              color: const Color.fromARGB(255, 56, 79, 88)
+                  .withOpacity(0.5), // ทำให้ดูโปร่งแสง
+              borderRadius: BorderRadius.circular(20), // ขอบโค้งมน
+              border: Border.all(
+                color: const Color.fromARGB(255, 33, 38, 54).withOpacity(0.3),
+                width: 2,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color:
+                      const Color.fromARGB(255, 67, 201, 211).withOpacity(0.2),
+                  blurRadius: 10, spreadRadius: -7,
+                  offset: const Offset(0, 0), // เงาที่อยู่ด้านล่าง
                 ),
-              )
-            ],
-          )),
-    );
+              ],
+            ),
+          ),
+        ));
   }
 }
