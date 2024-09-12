@@ -18,17 +18,17 @@ class IndexWeb extends StatelessWidget {
             height: 380,
             width: 480,
             decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 56, 79, 88)
+              color: const Color.fromARGB(255, 88, 56, 56)
                   .withOpacity(0.5), // ทำให้ดูโปร่งแสง
               borderRadius: BorderRadius.circular(20), // ขอบโค้งมน
               border: Border.all(
-                color: const Color.fromARGB(255, 33, 38, 54).withOpacity(0.3),
+                color: const Color.fromARGB(255, 54, 33, 33).withOpacity(0.3),
                 width: 2,
               ),
               boxShadow: [
                 BoxShadow(
                   color:
-                      const Color.fromARGB(255, 67, 201, 211).withOpacity(0.2),
+                      const Color.fromARGB(255, 211, 67, 67).withOpacity(0.2),
                   blurRadius: 10, spreadRadius: -7,
                   offset: const Offset(0, 0), // เงาที่อยู่ด้านล่าง
                 ),
