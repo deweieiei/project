@@ -26,8 +26,8 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
       create: (context) {
         Counter();
       },
-      child:const MaterialApp(
-        localizationsDelegates: [
+      child:  MaterialApp(
+        localizationsDelegates:const [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,

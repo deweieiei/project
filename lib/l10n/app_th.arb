@@ -1,4 +1,6 @@
 {
     "press_msg": "คุณกดปุ่มนี้หลายครั้ง:",
-    "counter_msg": "{count} ครั้ง"  
+    "counter_msg": "{count} ครั้ง"  ,
+    "user":"ผู้ใช้",
+    "password": "รหัสผ่าน"
 }
