@@ -10,3 +10,13 @@ class Counter with ChangeNotifier {
     notifyListeners();
   }
 }
+
+class DataProvider with ChangeNotifier {
+  String? name_hospital;
+  String? platfromURL;
+  String? care_unit_id;
+
+  String? passwordsetting;
+  String? care_unit;
+  String? myapp;
+}

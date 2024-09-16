@@ -189,6 +189,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.0"
+  path_provider:
+    dependency: "direct dev"
+    description:
+      name: path_provider
+      sha256: fec0d61223fba3154d87759e3cc27fe2c8dc498f6386c6d6fc80d1afdd1bf378
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.4"
+  path_provider_android:
+    dependency: transitive
+    description:
+      name: path_provider_android
+      sha256: "6f01f8e37ec30b07bc424b4deabac37cacb1bc7e2e515ad74486039918a37eb7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.10"
+  path_provider_foundation:
+    dependency: transitive
+    description:
+      name: path_provider_foundation
+      sha256: f234384a3fdd67f989b4d54a5d73ca2a6c422fa55ae694381ae0f4375cd1ea16
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.0"
   path_provider_linux:
     dependency: transitive
     description:
@@ -237,6 +261,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.2"
+  sembast:
+    dependency: "direct dev"
+    description:
+      name: sembast
+      sha256: cae6c2b606226c94d9a6a9951b7b0632194077a9d7ea5e8e2300c88d8f19a823
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.7.4"
   shared_preferences:
     dependency: transitive
     description:
@@ -330,6 +362,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  synchronized:
+    dependency: transitive
+    description:
+      name: synchronized
+      sha256: "51b08572b9f091f8c3eb4d9d4be253f196ff0075d5ec9b10a884026d5b55d7bc"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.3.0+2"
   term_glyph:
     dependency: transitive
     description:
