@@ -10,5 +10,7 @@
       }
     },
     "user":"User",
-    "password": "Password"
+    "password": "Password",
+    "login": "Login",
+    "register":"Register"
 }
