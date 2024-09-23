@@ -1,6 +1,7 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:project/modelsProvider/counter.dart';
 import 'package:sembast/sembast.dart';
@@ -44,7 +45,7 @@ Future<void> addDataInfoToDatabase(DataProvider data) async {
     'care_unit': data.care_unit,
     'myapp': data.myapp,
   });
-
+  debugPrint(key.toString());
   await db.close();
 }
 
@@ -55,6 +56,7 @@ Future<void> updateDataInfoToDatabase(DataProvider data) async {
     'name_hospital': data.name_hospital,
     'platfromURL': data.platfromURL,
   });
+  debugPrint(key.toString());
   await db.close();
 }
 
