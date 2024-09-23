@@ -8,7 +8,7 @@ import 'package:sembast/sembast_io.dart';
 
 Future<Database> openDatabaseapp() async {
   Directory app = await getApplicationDocumentsDirectory();
-  String dbpart = app.path + '/' + 'smart_healt_data.db';
+  String dbpart = '${app.path}/smart_healt_data.db';
   final db = await databaseFactoryIo.openDatabase(dbpart);
   return db;
 }
@@ -23,8 +23,8 @@ Future<bool> Showdatabasedatauserapp() async {
   Database db = await openDatabaseapp();
   var store = intMapStoreFactory.store('smart_healt');
   var records = await store.find(db);
-  print(records);
-  if ((records.length == 0)) {
+
+  if ((records.isEmpty)) {
     return false;
   } else {
     return true;

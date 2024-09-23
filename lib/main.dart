@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:project/modelsProvider/counter.dart';
-import 'package:project/view/mobile/home.dart';
 import 'package:project/view/mobile/login.dart';
-import 'package:project/view/web/index.dart';
 import 'package:provider/provider.dart';
 
 void main() {
