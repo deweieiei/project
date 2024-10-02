@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:project/view/mobile/home.dart';
 
 class LoginApp extends StatefulWidget {
   LoginApp({super.key});
@@ -24,6 +25,11 @@ class _LoginAppState extends State<LoginApp> {
       setState(() {
         startusbut = false;
       });
+
+      Navigator.pushReplacement(
+          // ignore: use_build_context_synchronously
+          context,
+          MaterialPageRoute(builder: (context) => HomeApp()));
     }
   }
 
@@ -82,27 +88,34 @@ class _LoginAppState extends State<LoginApp> {
                 height: 380,
                 width: 300,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 54, 99, 92).withOpacity(0.5),
+                  color: const Color.fromARGB(255, 54, 99, 92).withOpacity(1),
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(
-                    color: const Color.fromARGB(255, 136, 211, 201)
-                        .withOpacity(0.2),
+                    color: const Color.fromARGB(255, 54, 99, 92).withOpacity(1),
                     width: 2,
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0),
-                      blurRadius: 10,
+                      offset: const Offset(15, 20),
+                      spreadRadius: -5,
+                      color: const Color.fromARGB(255, 54, 99, 92)
+                          .withOpacity(0.5),
+                      blurRadius: 20,
                     ),
                   ],
                 ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text(S.of(context)!.login, style: textStyle(28)),
-                    const SizedBox(height: 10),
-                    Input_TextField(S.of(context)!.user, user),
-                    const SizedBox(height: 10),
-                    Input_TextField(S.of(context)!.password, password),
+                    Column(
+                      children: [
+                        Text(S.of(context)!.login, style: textStyle(28)),
+                        const SizedBox(height: 10),
+                        Input_TextField(S.of(context)!.user, user),
+                        const SizedBox(height: 10),
+                        Input_TextField(S.of(context)!.password, password),
+                      ],
+                    ),
                     !startusbut
                         ? ElevatedButton(
                             onPressed: login,
